@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tourist-spots Template made responsive using Foundation 5</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <script src="js/vendor/modernizr.js"></script>
+</head>
+
+<body>
+  <section class="row hide-for-small-only">
+    <div class="brand large-3 columns">
+      <a href="index.html"><img src="img/logo.JPG" /></a>
+    </div>
+    <nav class="large-9 columns">
+      <ul class="right button-group radius">
+        <li><a href="index.html" class="button">Home</a></li>
+        <li><a href="services.html" class="button">Services</a></li>
+        <li><a href="about.html" class="button">About Us</a></li>
+        <li><a href="faq.html" class="button">FAQ</a></li>
+        <li><a href="contact.html" class="button">Contact Us</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+      <nav class="tab-bar fixed show-for-small-only">
+        <div class="right-small">
+          <a href="#" class="right-off-canvas-toggle menu-icon"><span></span></a>
+        </div>
+        <div class="brand left">
+          <a href="index.html"><span class="green">Tourist</span><span class="blue"> Spots</span></a>
+        </div>
+      </nav>
+
+      <aside class="right-off-canvas-menu">
+        <ul class="off-canvas-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </aside>
+
+
+      <section class="row">
+        <section class="large-12 columns text-center">
+          <h2>FREQUENTLY ASKED QUESTIONS</h2>
+          <hr/>
+        </section>
+      </section>
+
+      <ul class="accordion small-11" data-accordion>
+        <li class="accordion-navigation">
+          <a href="#panel1">1. Can I pay using Skrill?</a>
+          <div id="panel1" class="content active">
+            <p>Yes we accept Skrill(Moneybooker).</p>
+          </div>
+        </li>
+
+        <li class="accordion-navigation">
+          <a href="#panel2">2. Can I cancel my order?</a>
+          <div id="panel2" class="content">
+            <p>Yes you can cancel your order anytime you want.</p>
+          </div>
+        </li>
+
+        <li class="accordion-navigation">
+          <a href="#panel3">3. What is the refund policy?</a>
+          <div id="panel3" class="content">
+            <p>You can receive 100% refund anytime for any reason, there are no strings attached.</p>
+          </div>
+        </li>
+
+        <li class="accordion-navigation">
+          <a href="#panel4">4. How will I get invoice for cheques?</a>
+          <div id="panel4" class="content">
+            <p>You can receive invoice either by mail or by e-mail.</p>
+          </div>
+        </li>
+      </ul>
+
+      <footer class="row">
+        <section class="large-12 columns">
+          <hr/>
+          <section class="row">
+            <section class="large-6 columns">
+              <p>&copy; Copyright - Tourist Site | Made responsive by Melvin Escarlan</p>
+            </section>
+            <section class="large-6 columns">
+              <ul class="inline-list right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </section>
+          </section>
+        </section>
+      </footer>
+    </div>
+  </div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation({
+      orbit: {
+        animation: 'fade',
+        timer_speed: 6000,
+        pause_on_hover: false,
+        slide_number: false,
+        animation_speed: 500,
+        navigation_arrows: false
+      }
+    });
+
+  </script>
+</body>
+
+</html>
